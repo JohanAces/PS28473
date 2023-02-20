@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM FPT</title>
+         <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/css/hoa.css">
+    
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/y-nghia-logo-fpt-lan-3.jpg" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+         <style>
+           
+         .photograp{
+               
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 150px;
+               border-radius: 50px;
+            }
+
+
+            .workshop{
+               
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 120px;
+               border-radius: 50px;
+            }
+
+            .stories{
+               border: 2px solid var(--mau-bg);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 100px;
+               border-radius: 50px;
+            }
+
+            .login-header{
+               
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 100px;
+               border-radius: 50px;
+            }
+
+            body{
+               background-color: white;
+            }
+
+            /* =========chantrang====== */
+
+                        
+            .chantrang2{
+               margin-top: 40px;
+               height: 400px;
+               width: 100%;
+            }
+
+            .webmap2{
+               width: 1200px;
+               height: 150px;
+               margin-left: auto;
+               margin-right: auto;
+               border-top: 1px solid rgba(0, 0, 0, 0.432);
+               border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+            }
+
+            .thanhdieuhuongchantrang2{
+               width: 1200px;
+               height: 150px;
+               margin-left: auto;
+               margin-right: auto;
+               padding-top: 60px;
+               
+            }
+
+            .thanhdieuhuongft2{
+               justify-content: space-between;
+               width: 900px;
+               margin-left: auto;
+               margin-right: auto;
+               display: flex;
+               justify-content: space-between;
+            }
+
+            #fttext2{
+               color: rgb(0, 0, 0);
+               
+            }
+
+            .thanhdieuhuongicon2{
+               justify-content: space-between;
+               width: 300px;
+               margin-left: auto;
+               margin-right: auto;
+               display: flex;
+               justify-content: space-between;
+            }
+
+            .bxl-facebook{
+               color: rgb(0, 0, 0);
+               background: none;
+               padding: none;
+               border: none;
+            }
+
+            .bxl-instagram-alt{
+               color: rgb(0, 0, 0);
+               background: none;
+               padding: none;
+               border: none;
+            }
+
+            .bxl-linkedin{
+               color: rgb(0, 0, 0);
+               background: none;
+               padding: none;
+               border: none;
+            }
+
+            .bxl-youtube
+            {   
+               color: rgb(0, 0, 0);
+               background: none;
+               padding: none;
+               border: none;
+            }
+
+            .thuonghieucanhan2
+            {
+               width: 100%;
+               height: 150px;
+               margin-left: auto;
+               margin-right: auto;
+               /* background-color: yellowgreen; */
+            }
+
+            .thuonghieucanhanx2{
+               width: 1000px;
+               height: 150px;
+               margin-left: auto;
+               margin-right: auto;
+               /* background-color: rgb(86, 50, 205); */
+               display: flex;
+               justify-content: space-between;
+            }
+
+            .textthuonghieu2{
+               text-align: center;
+               margin-top: 30px;
+            }
+
+            .logothuonghieu2{
+               margin-top: 15px;
+               margin-left: 200px;
+            }
+
+            .thuonghieu2{
+               margin-right: 200px;
+            }
+
+            .texthuonghieux2{
+               color: rgb(0, 0, 0);
+            }
+
+            .fttext2{
+               font-weight: 900;
+               color: black;
+            }
+
+
+            .ft101:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 150px;
+            }
+
+            .ft102:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 100px;
+            }
+
+            .ft103:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 120px;
+            }
+
+            .ft104:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 210px;
+            }
+
+            .ft105:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 120px;
+            }
+
+
+         </style>
+</head>
+<body>
+
+    
+    <header>
+
+      <div class="daunao">
+           <a href="#" class="logo">
+            <img src="/img/FPT_Polytechnic.png" width="190px" height="65px">
+         </a>    
+               <ul  class="thanhdieuhuong">
+
+               
+                  <div class="photograp">
+                     <li><a class="tranghome" href="index.html">Photographers</a></li>
+                 </div>
+
+                 <!-- <div class="hddclass">
+                    <li><a id="ft5x" href="index.html"><span id="fttext">Classes</span></a></li>
+                </div> -->
+
+                <div class="workshop">
+                  <li><a href="/pages/workshop.html">Workshop</a></li>
+                </div>
+
+                <div class="stories">
+                  <li><a href="/pages/stories.html">Stories</a></li>
+                </div>
+
+                <div class="login-header">
+                 <a href="#" class="btn">Login</a>
+                </div>
+
+               </ul>
+      </div>                      
+    </header>
+
+    <div class="hopicon">
+      <i class='bx bxs-chevron-right bx-rotate-180' id="senxi"></i>
+   </div>
+   <div class="hopicon2">
+      <i class='bx bxs-chevron-right' id="senxi2"></i>
+   </div>
+    <section class="stthhat">
+      
+    
+
+      <div class="hopanh">
+         <div class="anhdog">
+            <img src="/img/anhplex.jpeg" class="anhdogimg">
+         </div>
+         <div class="texttrennenlon">
+            <div class="usertext">
+               <div class="user">
+                  <div class="avatar">
+                     <img src="/img/lee.jpg" class="avt1" width="50px" height="50px">
+                  </div>
+                  <div class="dr-one">
+                     <span class="drray">Dr Ray Hansen</span>
+                     <span class="oneday">• 1 day ago</span>
+                  </div>             
+               </div>
+               <div class="alook">
+                  <h2 class="alooktext">A Look at Unusual Sleep Disorders</h2>
+               </div>
+               <div class="sleep">
+                  <span class="slepptetx">
+                     Sleep should be a time for peaceful rest and rejuvenation. But the truth is that many Americans don't get the...
+                  </span> 
+               </div>
+   
+               <div class="readbox">
+                  <div class="readtext">
+                     <span class="readmore">
+                        Read More
+                     </span>
+                  </div>
+                
+               </div>
+            </div>          
+         </div>
+      </div>
+   </section>
+<!-- ==========================================ENDSECTION1================================= -->
+
+    
+  <div class="tamquy">
+      <div class="theretron1">
+      </div>
+      <div class="theretron">
+      </div>
+      <div class="theretron">
+      </div>
+    </div>
+
+   <!-- ==========================================SECTION2================================= -->
+
+    <section class="sttnhi">
+
+      <div class="videopost">
+         <div class="vd-icon-vm">
+               <div class="textvideop">
+                  <span class="tvdp">
+                     Video Posts
+                  </span>
+               </div>
+               <div class="text-iconrr">
+                  <div class="viewmore">
+                     <span class="v-m">
+                        View More</span>
+                     </span>             
+                  </div>
+                  <!-- <div class="iconarows">
+                     <i class='bx bx-chevron-right' ></i>
+                  </div> -->
+               </div>
+              
+         </div>
+         
+         <!-- ========== -->
+         <div class="video5p">
+            <div class="video122">
+               <video controls class="videoxnss" >
+                  <source src="/video/wallstreet.mp4" class="video122vip">
+               </video>
+            </div>
+         </div>
+         <!-- ========== -->
+         <div class="usertextst2">
+            <div class="userst2">
+               <div class="avatar">
+                  <img src="/img/avtnew.jpg" class="avt2" width="50px" height="50px">
+               </div>
+               <div class="dr-one">
+                  <span id="eliza">Eliza Rodriquez</span>
+                  <span id="thereday">• 3 day ago</span>
+               </div>             
+            </div>
+            <div class="kep">
+               <div class="alook">
+                  <h2 class="alooktext">Mattress Fim Spansors Bert's Big Adventure</h2>
+               </div>
+               <div class="sleep">
+                  <span class="slepptetx">
+                     To show their love and support for children and families fighting every day batlles, Mattress Firm... partnered with Bert's Big...
+                  </span> 
+               </div>         
+            </div>
+            <div class="cmt-like">
+               <div class="like">
+                  <i class='bx bx-like'></i>
+                  <div class="textrieng">
+                     <span class="sotext">30</span>
+                  </div>
+                 
+               </div>
+               <div class="cmt">
+                  <i class='bx bx-comment' ></i>
+                  <div class="textrieng">
+                     <span class="sotext">20</span>
+                  </div>
+               </div>
+            </div>
+           
+         </div>
+
+      </div>
+
+
+      <!-- ===========star2=========== -->
+
+      <div class="videopost">
+         <div class="vd-icon-vm">
+               <div class="textvideop2">
+                  <span class="tvdp">
+                    Latest News
+                  </span>
+               </div>
+               <div class="text-iconrr">
+                  <div class="viewmore">
+                     <span class="v-m">
+                        View More</span>
+                     </span>             
+                  </div>
+                  <!-- <div class="iconarows">
+                     <i class='bx bx-chevron-right' ></i>
+                  </div> -->
+               </div>
+              
+         </div>
+         
+         <!-- ========== -->
+         <div class="3user">
+           <!-- ==================thunhat============== -->
+            <div class="userthunhat"> 
+               <!-- height="115.2px" width="380px" -->
+               <div class="booneuserthunhat">
+                  <div class="anhuser1">
+                     <img class="anhuser1ne" src="/img/avt4.jpg" width="110px" height="120px">
+                  </div>
+                  <div class="textuserthunhat" width="200px">
+   
+                     <div class="tongtextuserone">
+                        <div class="nameuserone">
+                           <span id="dialo">Ashley Carrel</span>
+                           <span id="dialoday">• 1 day ago</span>
+                        </div>
+                        <div class="bedding">
+                           <span id="beddingtext">
+                              Bedding manufecturers face cost increases
+                           </span>
+                        </div>
+                     </div>
+   
+                     <div class="cmt-like2">
+                        <div class="like">
+                           <i class='bx bx-like'></i>
+                           <div class="textrieng">
+                              <span class="sotext">30</span>
+                           </div>
+                          
+                        </div>
+                        <div class="cmt">
+                           <i class='bx bx-comment' ></i>
+                           <div class="textrieng">
+                              <span class="sotext">20</span>
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
+              
+               
+            </div>
+         </div>
+
+          <!-- ==================thuhai============== -->
+
+         <div class="userthuhai"> 
+            <!-- height="115.2px" width="380px" -->
+            <div class="booneuserthunhat2">
+               <div class="anhuser1">
+                  <img class="anhuser1ne" src="/img/avt6.jpg" width="110px" height="120px">
+               </div>
+               <div class="textuserthunhat" width="200px">
+
+                  <div class="tongtextuserone">
+                     <div class="nameuserone">
+                        <span id="dialo">Bradley French </span>
+                        <span id="dialoday">• 1 day ago</span>
+                     </div>
+                     <div class="bedding">
+                        <span id="beddingtext">
+                           Become a Mattress Firm brand embassador
+                        </span>
+                     </div>
+                  </div>
+
+                  <div class="cmt-like2">
+                     <div class="like">
+                        <i class='bx bx-like'></i>
+                        <div class="textrieng">
+                           <span class="sotext">56</span>
+                        </div>
+                       
+                     </div>
+                     <div class="cmt">
+                        <i class='bx bx-comment' ></i>
+                        <div class="textrieng">
+                           <span class="sotext">12</span>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+           
+            
+         </div>
+
+         <div class="userthuba"> 
+            <!-- height="115.2px" width="380px" -->
+            <div class="booneuserthunhat3">
+               <div class="anhuser1">
+                  <img class="anhuser1ne" src="/img/avt3.jpg" width="110px" height="120px">
+               </div>
+               <div class="textuserthunhat" width="200px">
+
+                  <div class="tongtextuserone">
+                     <div class="nameuserone">
+                        <span id="dialo">Evelyn Wade</span>
+                        <span id="dialoday">• 2 day ago</span>
+                     </div>
+                     <div class="bedding">
+                        <span id="beddingtext">
+                           Mattress Firm Gives Back to Foster Famillies
+                        </span>
+                     </div>
+                  </div>
+
+                  <div class="cmt-like2">
+                     <div class="like">
+                        <i class='bx bx-like'></i>
+                        <div class="textrieng">
+                           <span class="sotext">35</span>
+                        </div>
+                       
+                     </div>
+                     <div class="cmt">
+                        <i class='bx bx-comment' ></i>
+                        <div class="textrieng">
+                           <span class="sotext">8</span>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+           
+            
+         </div>
+      </div>
+      
+      </div>
+
+<!-- ============================================================= -->
+      <div class="videopost">
+         <div class="vd-icon-vm">
+               <div class="textvideop3">
+                  <span class="tvdp">
+                     Upcomming Event
+                  </span>
+               </div>
+               <div class="text-iconrr3">
+                  <div class="viewmore3">
+                     <span class="v-m3">
+                        View All</span>
+                     </span>             
+                  </div>
+                  <!-- <div class="iconarows3">
+                     <i class='bx bx-chevron-right' ></i>
+                  </div> -->
+               </div>
+               <!-- ============ -->
+         </div>
+         
+         <div class="hoplastday">
+            <div class="fiveteen">
+               <span id="muoilam">15</span><br>
+               <span id="jul">JUL</span>
+            </div>
+            <div class="hoplastdaytext">
+               <div class="lastdaytext">
+                  <span id="ldot">Last Day of the Big Deal</span><br>
+                  <span id="havd">Nationawide</span>
+               </div>
+            </div>        
+         </div>
+
+         <div class="hoplastday">
+            <div class="fiveteen">
+               <span id="muoilam">12</span><br>
+               <span id="jul">JUL</span>
+            </div>
+            <div class="hoplastdaytext">
+               <div class="lastdaytext">
+                  <span id="ldot">Foster Kids Dollar Drive Ends</span><br>
+                  <span id="havd">Nationawide</span>
+               </div>
+            </div>        
+         </div>
+
+         <div class="hoplastday">
+            <div class="fiveteen">
+               <span id="muoilam">24</span><br>
+               <span id="jul">JUL</span>
+            </div>
+            <div class="hoplastdaytext">
+               <div class="lastdaytext">
+                  <span id="ldot">MF Social Envent</span><br>
+                  <span id="havd">The Louge Cafe</span>
+               </div>
+            </div>        
+         </div>
+
+         <div class="hoplastday">
+            <div class="fiveteen">
+               <span id="muoilam">02</span><br>
+               <span id="jul">JUL</span>
+            </div>
+            <div class="hoplastdaytext">
+               <div class="lastdaytext">
+                  <span id="ldot">Foster Kids Clothing Drive</span><br>
+                  <span id="havd">No Location</span>
+               </div>
+            </div>        
+         </div>
+
+         <div class="hoplastday">
+            <div class="fiveteen">
+               <span id="muoilam">10</span><br>
+               <span id="jul">AUG</span>
+            </div>
+            <div class="hoplastdaytext">
+               <div class="lastdaytext">
+                  <span id="ldot">Last Day of the Big Deal</span><br>
+                  <span id="havd">Nationawide</span>
+               </div>
+            </div>        
+         </div>
+
+
+      </div>
+
+
+    </section>
+
+      <div class="ngancachsao">
+         <div class="ngancachwhat">
+            <span id="what">
+               What's Happening
+            </span>
+         </div> 
+      </div>
+
+   <!-- ====================================SECTION PHAN 3================================== -->
+   
+   <section class="phan3">
+      <div class="khuthaoluan">
+         <div class="yourcmt">
+            <div class="avatarmain">
+               <img src="/img/johan.jpg" class="avt2" width="50px" height="50px">
+            </div>
+            <input type="text" class="nhapvao">
+         </div>
+
+         <!-- =====1===== -->
+
+         <div class="cmtbot">
+            <div class="avt-namebot">
+               <div class="avatarbot">
+                  <img src="/img/avt9.jpg" class="avt2" width="50px" height="50px">
+               </div>
+               <div class="kyle-add">
+                  <span class="kyle">
+                     Kyle Colon
+                  </span>
+                  <span class="added">added</span>
+               </div> 
+               <div class="hourtext">
+                  <span class="hour">5 minutes ago</span>
+               </div>       
+            </div>
+            <div class="blog-bot">
+               <span class="bloggin">
+                  Blogging Best Practice to Marketing Documents
+               </span>
+            </div>
+            <div class="cmt-likex">
+               <div class="like">
+                  <i class='bx bx-like'></i>
+                  <div class="textrieng">
+                     <span class="sotext">57</span>
+                  </div>
+                 
+               </div>
+               <div class="cmt">
+                  <i class='bx bx-comment' ></i>
+                  <div class="textrieng">
+                     <span class="sotext">19</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- ======2======== -->
+         <div class="cmtbot">
+            <div class="avt-namebot">
+               <div class="avatarbot">
+                  <img src="/img/avt5.jpg" class="avt2" width="50px" height="50px">
+               </div>
+               <div class="kyle-add">
+                  <span class="kyle">
+                     Grace Fowler
+                  </span>
+                  <span class="added">replied to </span><span class="kyle">Best customer examples for<br>healthcare campaign? </span><span class="added">in the forum:</span>       
+               </div> 
+               <div class="hourtext">
+                  <span class="hour">1 hour ago</span>
+               </div>       
+            </div>
+            <div class="blog-bot">
+               <span class="bloggin2">
+                  Marketing Forum Your best bet is James Garde, i know he's had several sales in this sector recently and would probably be albe to recommend the best person to approach!
+               </span>
+            </div>
+            <div class="cmt-likex">
+               <div class="like">
+                  <i class='bx bx-like'></i>
+                  <div class="textrieng">
+                     <span class="sotext">35</span>
+                  </div>
+                 
+               </div>
+               <div class="cmt">
+                  <i class='bx bx-comment' ></i>
+                  <div class="textrieng">
+                     <span class="sotext">12</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ===========================3================== -->
+         <div class="cmtbotcuoi">
+            <div class="avt-namebot">
+               <div class="avatarbot">
+                  <img src="/img/avt11.jpg" class="avt2" width="50px" height="50px">
+               </div>
+               <div class="kyle-add">
+                  <span class="kyle">
+                     Jeanette Stone
+                  </span>
+                  <span class="added">has posted on Marketing Team timeline</span>        
+               </div> 
+               <div class="hourtext">
+                  <span class="hour">3 hour ago</span>
+               </div>       
+            </div>
+            <div class="blog-bot">
+               <span class="bloggin2">            
+                  Has anyone got a preferred photo editing tool they'd recommend? Photoshop is proving too techical for me, i just need somethong for the basics like croping, minor color changes, that sort of thing. Thanks!
+               </span>
+            </div>
+            <div class="cmt-likex">
+               <div class="like">
+                  <i class='bx bx-like'></i>
+                  <div class="textrieng">
+                     <span class="sotext">45</span>
+                  </div>
+                 
+               </div>
+               <div class="cmt">
+                  <i class='bx bx-comment' ></i>
+                  <div class="textrieng">
+                     <span class="sotext">21</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- =========chia khu================ -->
+      <div class="khumap">
+
+         <div class="updates">
+            <div class="hangtag">
+                  <div class="tag">
+                     <i class='bx bxs-purchase-tag-alt' ></i>
+                  </div>
+                  <div class="the1">
+                     <div class="boctag">
+                        <span id="traveltag">travel</span>
+                     </div>               
+                  </div>
+                  <div class="the1">
+                     <div class="boctag">
+                        <span id="traveltag">domestictravel</span>
+                     </div>               
+                  </div>
+                  <div class="the1">
+                     <div class="boctag">
+                        <span id="traveltag">mountain</span>
+                     </div>               
+                  </div>
+            </div>
+            <div class="newstext">
+               <div class="nd-td">
+                  <div class="tieudecuatin">
+                     <span id="tdcut">Stonehenge Tours</span>
+                  </div>
+                  <div class="noidungcuatin">
+                     <span id="ndct">Take a tour from London to Stonehenge and explore an area that has fascinated millions for generations.</span>
+                  </div>
+               </div>         
+            </div>
+         </div>
+
+      <div class="updates2">
+            <div class="hangtag">
+               <div class="tag">
+                  <i class='bx bxs-purchase-tag-alt' ></i>
+               </div>
+               <div class="the1">
+                  <div class="boctag">
+                     <span id="traveltag">travel</span>
+                  </div>               
+               </div>
+               <div class="the1">
+                  <div class="boctag">
+                     <span id="traveltag">domestictravel</span>
+                  </div>               
+               </div>
+               <div class="the1">
+                  <div class="boctag">
+                     <span id="traveltag">mountain</span>
+                  </div>               
+               </div>
+         </div>
+         <div class="newstext">
+                  <div class="nd-td">
+                     <div class="tieudecuatin">
+                        <span id="tdcut">Best 11 day trips from London</span>
+                     </div>
+                     <div class="noidungcuatin">
+                        <span id="ndct">Explore some of the most charming villages and rural scenery of the Cotswolds on one of the best Cotswolds package tours from London.</span>
+                     </div>
+                  </div>         
+            </div>
+         </div>
+
+         <div class="upadtes3">
+            <div class="ftr-icon">
+               <div class="FTR">
+                  <div class="FTRCT">
+                     <span id="feature">FEATURED POSTS</span>
+                  </div>
+                 
+               </div>
+               <div class="iconFTR">
+                  <div class="iconFTRCT">
+                     <i class='bx bxs-chevron-right' id="xengai"></i>
+                  </div>               
+               </div>
+            </div>         
+         </div>
+
+   </div>
+   </section>
+   
+   <!-- ==================================FOOTER==================== -->
+
+    
+   <div class="chantrang2">
+
+      <div class="webmap2">
+         <div class="thanhdieuhuongchantrang2">
+            <ul  class="thanhdieuhuongft2">
+
+               <div class="ft101">
+                  <li><a id="ft5x" href="index.html"><span id="fttext2">Photographers</span></a></li>
+              </div>
+              <div class="ft102">
+                 <li><a id="ft5x" href="index.html"><span id="fttext2">Classes</span></a></li>
+             </div>
+              <div class="ft103">
+                 <li><a id="ft5x" href="/pages/workshop.html"><span id="fttext2">Workshop</span></a></li>
+              </div>
+              <div class="ft104">
+                 <li><a id="ft5x" href="/pages/stories.html"><span id="fttext2">Become A Contributor</span></a></li>
+              </div>
+              <div class="ft105">
+                 <li><a href="/pages/contact.html" id="ft5x"><span id="fttext2">Contas Us</span></a></li>
+              </div>          
+               
+            </ul>
+         </div>
+      </div>
+
+      <div class="iconmap">
+         <div class="thanhdieuhuongchantrang">
+            <ul  class="thanhdieuhuongicon">
+
+               <div class="ft0">
+                   <li><a id="ft5x" href="#"><i class='bx bxl-facebook'></i></a></li>
+               </div>
+               <div class="ft0">
+                  <li><a id="ft5x" href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+              </div>
+               <div class="ft0">
+                  <li><a id="ft5x" href="#"><i class='bx bxl-linkedin' ></i></a></li>
+               </div>
+               <div class="ft0">
+                  <li><a id="ft5x" href="#"><i class='bx bxl-youtube' ></i></a></li>
+               </div>
+
+            </ul>
+         </div>
+      </div>
+
+      <div class="thuonghieucanhan">
+         <div class="thuonghieucanhanx">
+
+            <div class="logothuonghieu">
+               <img src="/img/FPT_Polytechnic.png" width="200px" height="70px">
+            </div>
+
+            <div class="thuonghieu">
+               <div class="textthuonghieu">
+                  <span class="texthuonghieux2">
+                     Copyright @ 2023 ASM
+                  </span><br>
+                  <span class="texthuonghieux2">
+                    Web progamming by Johan FPT
+                  </span>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+    </div>
+
+</body>
+</html>

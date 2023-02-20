@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM FPT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Heebo:wght@300&family=Khand:wght@300&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+         <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/css/hoa.css">
+    
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/y-nghia-logo-fpt-lan-3.jpg" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+         <style>
+
+            .photograp{
+               
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 150px;
+               border-radius: 50px;
+            }
+
+
+            .workshop{
+               
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 120px;
+               border-radius: 50px;
+            }
+
+            .stories{
+               
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 100px;
+               border-radius: 50px;
+            }
+
+            .login-header{
+               
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 100px;
+               border-radius: 50px;
+            }
+
+            body
+            {
+               background-color: rgb(0, 0, 0);
+            }
+
+            .chantrang2{
+               height: 500px;
+               width: 100%;
+               background-color: white;
+            }
+
+            .webmap2{
+               width: 1200px;
+               height: 150px;
+               margin-left: auto;
+               margin-right: auto;
+               border-top: 1px solid rgba(0, 0, 0, 0.432);
+               border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+            }
+
+            .thanhdieuhuongchantrang2{
+               width: 1200px;
+               height: 150px;
+               margin-left: auto;
+               margin-right: auto;
+               padding-top: 60px;
+               
+            }
+
+            .thanhdieuhuongft2{
+               justify-content: space-between;
+               width: 900px;
+               margin-left: auto;
+               margin-right: auto;
+               display: flex;
+               justify-content: space-between;
+            }
+
+            #fttext2{
+               color: rgb(0, 0, 0);
+               
+            }
+
+            .thanhdieuhuongicon2{
+               justify-content: space-between;
+               width: 300px;
+               margin-left: auto;
+               margin-right: auto;
+               display: flex;
+               justify-content: space-between;
+            }
+
+            .bxl-facebook{
+               color: rgb(0, 0, 0);
+               background: none;
+               padding: none;
+               border: none;
+            }
+
+            .bxl-instagram-alt{
+               color: rgb(0, 0, 0);
+               background: none;
+               padding: none;
+               border: none;
+            }
+
+            .bxl-linkedin{
+               color: rgb(0, 0, 0);
+               background: none;
+               padding: none;
+               border: none;
+            }
+
+            .bxl-youtube
+            {   
+               color: rgb(0, 0, 0);
+               background: none;
+               padding: none;
+               border: none;
+            }
+
+            .thuonghieucanhan2
+            {
+               width: 100%;
+               height: 150px;
+               margin-left: auto;
+               margin-right: auto;
+               /* background-color: yellowgreen; */
+            }
+
+            .thuonghieucanhanx2{
+               width: 1000px;
+               height: 150px;
+               margin-left: auto;
+               margin-right: auto;
+               /* background-color: rgb(86, 50, 205); */
+               display: flex;
+               justify-content: space-between;
+            }
+
+            .textthuonghieu2{
+               text-align: center;
+               margin-top: 30px;
+            }
+
+            .logothuonghieu2{
+               margin-top: 15px;
+               margin-left: 200px;
+            }
+
+            .thuonghieu2{
+               margin-right: 200px;
+            }
+
+            .texthuonghieux2{
+               color: rgb(0, 0, 0);
+            }
+
+            .fttext2{
+               font-weight: 900;
+               color: black;
+            }
+
+            .ft101:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 150px;
+            }
+
+            .ft102:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 100px;
+            }
+
+            .ft103:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 120px;
+            }
+
+            .ft104:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 210px;
+            }
+
+            .ft105:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: rgb(0, 0, 0);
+               box-shadow: 0 0 0 10px rgba(99, 98, 98, 0.158);
+               border: 1px solid rgb(0, 0, 0);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 120px;
+            }
+
+
+         </style>
+</head>
+<body>
+   
+    <header>
+
+      <div class="daunao">
+           <a href="#" class="logo">
+            <img src="/img/FPT_Polytechnic.png" width="190px" height="65px">
+         </a>    
+               <ul  class="thanhdieuhuong">
+
+                
+                <div class="photograp">
+                    <li><a class="tranghome" href="index.html">Photographers</a></li>
+                </div>
+
+                <!-- <div class="hddclass">
+                   <li><a id="ft5x" href="index.html"><span id="fttext">Classes</span></a></li>
+               </div> -->
+
+               <div class="workshop">
+                 <li><a href="/pages/workshop.html">Workshop</a></li>
+               </div>
+
+               <div class="stories">
+                 <li><a href="/pages/stories.html">Stories</a></li>
+               </div>
+
+               <div class="login-header">
+                <a href="#" class="btn">Login</a>
+               </div>
+
+               </ul>
+      </div>
+                        
+    </header>
+   
+
+    <!-- ====================================endHD====================================== -->
+    <!-- ======================================ST1================================================ -->
+
+    <section class="anna1">
+
+        <div class="container-anna-1">
+            <div class="trusochinh">
+                <span class="headedoffice">
+                    HEAD OFFICE
+                </span>
+            </div>
+            <div class="address">
+                <h1 class="diachilienhe">
+                    FPT Tower, No.10 Pham Van Bach Street, Dich Vong Ward,<br>Cau Giay District, Hanoi City, Vietnam
+                </h1>
+            </div>
+            <div class="phone-mail">
+                <div class="gmail">
+                    <div class="gmail-icon">
+                        <i class='bx bxl-gmail'></i>
+                    </div>
+                    <div class="address-mail">
+                        <span class="textadddres">michael.hering@fsoft.com.vn</span> 
+                    </div>
+                </div>
+                <div class="phonenumbers">
+                    <div class="phonenumbers-icon">
+                        <i class='bx bxs-phone-call' ></i>
+                    </div>
+                    <div class="phone-number">
+                        <span class="phonetext"> (+84) 243 768 9048</span>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        
+    </section>
+
+
+    <!-- ========================ST2===================================================================== -->
+
+    <section class="anna2">
+
+        <div class="container-anna-2">          
+
+            <div class="bentrai-from">
+                <div class="trusochinh">
+                    <span class="headedoffice">
+                        CONTACT US
+                    </span>
+                </div>
+                <div class="address">
+                    <h1 class="diachilienhe">
+                        How can we help
+                    </h1>
+                </div>
+
+                <form class="anna-2-from">
+
+                    <div class="name-o">
+                        <div class="dong1-1">
+                            <input type="text" id="input-name" placeholder="Name">
+                        </div>
+                        <div class="dong1-2">
+                            <input type="text" id="input-name" placeholder="Last name">
+                        </div>            
+                    </div>
+
+                    <div class="name-o">
+                        <div class="dong1-1">
+                            <input type="text" id="input-name" placeholder="Phone number">
+                        </div>
+                        <div class="dong1-2">
+                            <input type="text" id="input-name" placeholder="Email adrees">
+                        </div>            
+                    </div>
+
+                    <div class="name-o">
+                        <div class="dong1-1">
+                            <input type="text" id="input-name" placeholder="Your role">
+                        </div>
+                        <div class="dong1-2">
+                            <input type="text" id="input-name" placeholder="Company">
+                        </div>            
+                    </div>
+
+                    <div class="name-o">
+                        <div class="dong-tn">
+                            <textarea type="text" id="input-messenger" placeholder="Messenger"></textarea>
+                        </div>   
+                    </div>     
+                    
+                </form>
+
+                <div class="nutnhan">
+                    <buton class="nut-sub">
+                        <span class="submit">
+                            SUBMIT
+                        </span>
+                    </buton>                  
+                </div>
+                
+            </div>
+            
+            <div class="benphai-anh">
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="map-FPT">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.964220650416!2d106.78957196977537!3d10.850888500000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527374c43baad%3A0xb8b244d75d12213e!2zRlBUIFNvZnR3YXJlIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1676656644246!5m2!1svi!2s" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+
+    <!-- =============================================STANANA-3================================================== -->
+     
+    <section class="anna-3">
+
+        <div class="officehafdong-1">
+            <div class="london-1">
+                <div class="lodontext">
+                    <span class="london-office">Ha Noi Office</span>
+                </div>
+                <div class="lodontext">
+                    <span class="address-text-diachi">FPT Cau Giay Building, Duy Tan Street, Dich Vong Hau Ward, Cau Giay District, Hanoi City, Vietnam</span>
+                </div>
+            </div>
+            <div class="london-1">
+                <div class="lodontext">
+                    <span class="london-office">Berlin Office</span>
+                </div>
+                <div class="lodontext">
+                    <span class="address-text-diachi">FPT Tower, No.10 Pham Van Bach Street, Dich Vong Ward, Cau Giay District, Hanoi City, Vietnam</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="officehafdong-2">
+            <div class="london-1">
+                <div class="lodontext">
+                    <span class="london-office">Tokyo Office</span>
+                </div>
+                <div class="lodontext">
+                    <span class="address-text-diachi">FPT Tower, No.10 Pham Van Bach Street, Dich Vong Ward, Cau Giay District, Hanoi City, Vietnam</span>
+                </div>
+            </div>
+            <div class="london-1">
+                <div class="lodontext">
+                    <span class="london-office">Moscow Office</span>
+                </div>
+                <div class="lodontext">
+                    <span class="address-text-diachi">FPT Tower, No.10 Pham Van Bach Street, Dich Vong Ward, Cau Giay District, Hanoi City, Vietnam</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- ========================================ft========================================================= -->
+
+<div class="chantrang2">
+
+    <div class="webmap2">
+       <div class="thanhdieuhuongchantrang2">
+          <ul  class="thanhdieuhuongft2">
+
+             <div class="ft101">
+                 <li><a id="ft5x" href="index.html"><span id="fttext2">Photographers</span></a></li>
+             </div>
+             <div class="ft102">
+                <li><a id="ft5x2" href="index.html"><span id="fttext2">Classes</span></a></li>
+            </div>
+             <div class="ft103">
+                <li><a id="ft5x" href="/pages/workshop.html"><span id="fttext2">Workshop</span></a></li>
+             </div>
+             <div class="ft104">
+                <li><a id="ft5x" href="/pages/stories.html"><span id="fttext2">Become A Contributor</span></a></li>
+             </div>
+             <div class="ft105">
+                <li><a href="/pages/contact.html" id="ft5x"><span id="fttext2">Contas Us</span></a></li>
+             </div>          
+             
+          </ul>
+       </div>
+    </div>
+
+    <div class="iconmap">
+       <div class="thanhdieuhuongchantrang">
+          <ul  class="thanhdieuhuongicon">
+
+            <div class="ft0">
+                <li><a id="ft5x" href="#"><i class='bx bxl-facebook'></i></a></li>
+            </div>
+            <div class="ft0">
+               <li><a id="ft5x" href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+           </div>
+            <div class="ft0">
+               <li><a id="ft5x" href="#"><i class='bx bxl-linkedin' ></i></a></li>
+            </div>
+            <div class="ft0">
+               <li><a id="ft5x" href="#"><i class='bx bxl-youtube' ></i></a></li>
+            </div>
+
+          </ul>
+       </div>
+    </div>
+
+    <div class="thuonghieucanhan">
+       <div class="thuonghieucanhanx">
+
+          <div class="logothuonghieu">
+             <img src="/img/FPT_Polytechnic.png" width="200px" height="70px">
+          </div>
+
+          <div class="thuonghieu">
+             <div class="textthuonghieu">
+                <span class="texthuonghieux2">
+                   Copyright @ 2023 ASM
+                </span><br>
+                <span class="texthuonghieux2">
+                  Web progamming by Johan FPT
+                </span>
+             </div>
+          </div>
+
+       </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

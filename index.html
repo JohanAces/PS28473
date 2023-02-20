@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM FPT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Heebo:wght@300&family=Khand:wght@300&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+         <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./css/hoa.css">
+    
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/y-nghia-logo-fpt-lan-3.jpg" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+         <style>
+            .photograp{
+               border: 2px solid var(--mau-bg);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 150px;
+               border-radius: 50px;
+            }
+
+
+            .workshop{
+              
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 120px;
+               border-radius: 50px;
+            }
+
+            .stories{
+               
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 100px;
+               border-radius: 50px;
+            }
+
+            .login-header{
+               
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 100px;
+               border-radius: 50px;
+            }
+
+
+
+
+            body{
+               background-color: rgb(0, 0, 0);
+            }
+
+            .aces{
+               padding-top: 10px;
+               background-image: url(./img/imager_13404.jpg);
+               background-repeat: no-repeat;
+               background-position: 10% 100%;
+               padding-bottom: 100px;
+            }
+
+
+            .ft101:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: white;
+               box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1);
+               border: 1px solid white;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 150px;
+            }
+
+            .ft102:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: white;
+               box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1);
+               border: 1px solid white;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 100px;
+            }
+
+            .ft103:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: white;
+               box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1);
+               border: 1px solid white;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 120px;
+            }
+
+            .ft104:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: white;
+               box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1);
+               border: 1px solid white;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 210px;
+            }
+
+            .ft105:hover{
+               border-radius: 50px;
+               transition: 1s;
+               color: white;
+               box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1);
+               border: 1px solid white;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 40px;
+               width: 120px;
+            }
+
+
+
+            
+           
+
+
+         </style>
+</head>
+<body>
+   
+<div class="aces">
+
+    
+    <header>
+
+      <div class="daunao">
+           <a href="#" class="logo">
+            <img src="./img/FPT_Polytechnic.png" width="190px" height="65px">
+         </a>    
+               <ul  class="thanhdieuhuong">
+                  
+                  <div class="photograp">
+                      <li><a class="tranghome" href="index.html">Photographers</a></li>
+                  </div>
+
+                  <!-- <div class="hddclass">
+                     <li><a id="ft5x" href="index.html"><span id="fttext">Classes</span></a></li>
+                 </div> -->
+
+                 <div class="workshop">
+                   <li><a href="/pages/workshop.html">Workshop</a></li>
+                 </div>
+
+                 <div class="stories">
+                   <li><a href="/pages/stories.html">Stories</a></li>
+                 </div>
+
+                 <div class="login-header">
+                  <a href="#" class="btn">Login</a>
+                 </div>
+                           
+               </ul>
+      </div>
+    
+
+                        
+    </header>
+    <main>
+
+      
+      <!-- ===============ST NHAT======= -->
+
+      <div class="nhat">
+         <i class='bx bx-play-circle'></i> <br>
+         <a href="#" class="tamgiac"></a>       
+         <span>- DANIEL KORDAN -</span> <br>
+         <h1>Landscape Photography</h1>    
+      </div>
+      <div class="four">
+
+         <div class="su199">
+            <div class="su199-x">
+               <span>$199</span> <br>             
+            </div>
+            <span class="Price">Price</span>          
+         </div>
+
+         <div class="expert">
+            <div class="expert-x">
+               <span>Expert</span> <br>              
+            </div>
+            <span>Level</span>       
+         </div>
+
+         <div class="lan32">
+            <div class="lan32-x">
+               <span>32</span> <br>
+            </div>
+            <span>Modules</span>
+         
+         </div> 
+
+         <div class="online">
+            <div class="online-x">
+               <span>Online</span> <br>
+            </div>
+            <span class="support">Support</span>  
+         </div>
+      </div>
+
+      <!-- ===============END NHAT======= -->
+
+       <!-- ===============ST NHI======= -->
+
+      <div class="nhi">
+
+         <div class="somot">
+            <nav class="tue">
+               <div class="tue01">
+                  <div class="tue0102">
+                      <span class="khongmot">01</span> 
+                  </div>             
+               </div>                       
+            </nav>
+            <nav class="tuetext">
+               <span class="textno1">Be a profesional landscape photography</span>
+            </nav>             
+         </div>
+
+         <div class="sohai">
+            <nav class="tue">
+               <div class="tue01">
+                  <div class="tue0102">
+                      <span class="khongmot">02</span> 
+                  </div>             
+               </div>                       
+            </nav>
+            <nav class="tuetext">
+               <span class="textno1">Explore top secrets of Astro Photography</span>
+            </nav>             
+         </div>
+
+         <div class="soba">
+            <nav class="tue">
+               <div class="tue01">
+                  <div class="tue0102">
+                      <span class="khongmot">03</span> 
+                  </div>             
+               </div>                       
+            </nav>
+            <nav class="tuetext">
+               <span class="textno1">Improve your composition<br>as profesional</span>
+            </nav>             
+         </div>
+
+         <div class="sobon">
+            <nav class="tue">
+               <div class="tue01">
+                  <div class="tue0102">
+                      <span class="khongmot">04</span> 
+                  </div>             
+               </div>                       
+            </nav>
+            <nav class="tuetext">
+               <span class="textno1">Explore top secrets of Astro Photography</span>
+            </nav>
+
+         </div>                              
+      </div>
+</div>
+
+
+     <div class="ticon">
+         <div class="pg">
+            <div class="phototop">
+               <span class="phototoptext">TOP PHOTO CLASSES</span>
+            </div>
+
+            <div class="gain">
+               <h1 class="gaintext">Gain the new skills</h1>
+            </div>
+         </div>
+      
+         <div class="right">
+            <i class='bx bx-chevron-right'></i>
+         </div>
+     </div> 
+      
+
+
+     <!-- ========== -->
+     <div class="ttanh">
+         <div class="boanh4">
+            <img src="./img/one.jpg" class="yasu">
+            <img src="./img/two.jpg" class="yasu">
+            <img src="./img/three.jpg" class="yasu">
+            <img src="./img/four.jpg" class="yasu">
+      </div>
+     </div>
+     
+
+     <!-- ==================textphoto============== -->
+
+     <div class="textpt">
+
+         <div class="arc">
+            <div class="arc1">
+               <span class="arctext">Architecture</span><br>
+            <span class="iwantext">- IWAN BAAN -</span>
+            </div>          
+         </div>
+
+         <div class="arc">
+            <div class="arc22">
+               <span class="arctext">Landscape</span><br>
+               <span class="iwantext">- DANIEL KOROAN -</span>
+            </div>        
+         </div>
+
+         <div class="arc">
+            <div class="arc33">
+               <span class="arctext">Astro Photo</span><br>
+               <span class="iwantext">- ARILD HEITWANN -</span>
+            </div>           
+         </div>
+
+         <div class="arc">
+            <div class="arc44">
+               <span class="arctext">People</span><br>
+               <span class="iwantext">- PAWEL UCHORCZAK -</span>
+            </div>
+         </div>
+      
+     </div>
+
+    </main>
+
+<!-- =========================================end2st======================================================== -->
+
+    <section class="johan1">
+
+      <div class="ticon2">
+         <div class="pg2">
+            <div class="phototop2">
+               <span class="phototoptext2">TOP PHOTOGRAPHERS</span>
+            </div>
+
+            <div class="gain2">
+               <h1 class="gaintext2">Our editor choices</h1>
+            </div>
+         </div>
+      
+         <div class="right2">
+            <i class='bx bx-chevron-right' id="xenhaod"></i>
+         </div>
+     </div> 
+
+     <!-- ======= -->
+
+     <div class="songanh">
+
+         <div class="anhdai1">
+         </div>
+         <div class="anhdai2">       
+         </div>
+      <!-- ===== -->
+      <div class="hainhiepamnh">
+
+         <div class="ctaicow1">
+            <div class="textchoanhdai1">
+               <div class="canxi">
+                  <div class="thomas">
+                     <span id="thomasheaton">THOMAS HEATON</span>
+                  </div>
+                  <div class="classes12">
+                     <span id="workshopclasses">12 CLASSES • 3 WORKSHOP</span>
+                  </div>
+               </div>
+               
+               <div class="in4">
+                  <span id="in4vip">Thomas Heaton is a travel and landscape photographer and creator of popular Youtube videos.</span>
+               </div>
+            </div>          
+         </div>
+
+         <div class="ctaicow2">
+            <div class="textchoanhdai2">
+               <div class="canxi">
+                  <div class="thomas">
+                     <span id="thomasheaton">ELIA LOCARDI</span>
+                  </div>
+                  <div class="classes12">
+                     <span id="workshopclasses">9 CLASSES • 2 WORKSHOP</span>
+                  </div>
+               </div>
+              
+               <div class="in4">
+                  <span id="in4vip">Elia locardi is an American photography professional specialized in travel photography, landscape photography.</span>
+               </div>
+            </div>            
+         </div>
+
+      </div>
+         
+     </div>
+
+    </section>
+
+
+<!-- =========================================ENDST3===================================== -->
+
+    <section class="johan2">
+
+      <div class="ticon2">
+         <div class="pg2">
+            <div class="phototop2">
+               <span class="phototoptext2">LATEST WORKSHOPS</span>
+            </div>
+
+            <div class="gain2">
+               <h1 class="gaintext2">Get more with practise</h1>
+            </div>
+         </div>
+      
+         <div class="right2">
+            <i class='bx bx-chevron-right' id="xenhaod"></i>
+         </div>
+     </div> 
+
+     <!-- ======= -->
+
+     <div class="songanh">
+
+         <div class="anhdai01">
+         </div>
+         <div class="anhdai02">       
+         </div>
+         <div class="anhdai3">
+         </div>
+         <div class="anhdai4">       
+         </div>
+      <!-- ===== -->
+      <div class="hainhiepamnh">
+
+         <div class="ctaicow3">
+            <div class="textchoanhdai3">
+               <div class="canxix">
+                  <div class="thomasx">
+                     <span id="thomasheatonx">4 DAYS</span>
+                  </div>
+                  <div class="classes12x">
+                     <span id="workshopclassesx">Beautiful Tuscany Tour in May</span>
+                  </div>
+               </div>
+               
+               <div class="in4x">
+                  <span id="in4vipx">- THOMAS HEATHON -</span>
+               </div>
+            </div>          
+         </div>
+
+         <div class="ctaicow4">
+            <div class="textchoanhdai3">
+               <div class="canxix">
+                  <div class="thomasx">
+                     <span id="thomasheatonx">4 DAYS</span>
+                  </div>
+                  <div class="classes12x">
+                     <span id="workshopclassesx">Namibia deserts Tour in  February</span>
+                  </div>
+               </div>
+               
+               <div class="in4">
+                  <span id="in4vipx">- DANIEL KORDAN -</span>
+               </div>
+            </div>          
+         </div>
+
+         <div class="ctaicow5">
+            <div class="textchoanhdai3">
+               <div class="canxix">
+                  <div class="thomasx">
+                     <span id="thomasheatonx">2 DAYS</span>
+                  </div>
+                  <div class="classes12x">
+                     <span id="workshopclassesx">Fashion Photography: The Complete Guide</span>
+                  </div>
+               </div>
+               
+               <div class="in4x">
+                  <span id="in4vipx">- GUENTER STOEHR -</span>
+               </div>
+            </div>          
+         </div>
+
+         <div class="ctaicow6">
+            <div class="textchoanhdai3">
+               <div class="canxix">
+                  <div class="thomasx">
+                     <span id="thomasheatonx">10 DAYS</span>
+                  </div>
+                  <div class="classes12x">
+                     <span id="workshopclassesx">Black and white Architecture in January</span>
+                  </div>
+               </div>
+               
+               <div class="in4x">
+                  <span id="in4vipx">- ELIA LOCARDI -</span>
+               </div>
+            </div>          
+         </div>
+
+      </div>
+         
+     </div>
+
+    </section>
+
+    <section class="johan3">
+
+      <div class="ticon2">
+         <div class="pg2">
+            <div class="phototop2">
+               <span class="phototoptext2">WHAT OUR STUDNTS SAYING</span>
+            </div>
+
+            <div class="gain2">
+               <h1 class="gaintext2">Check their experiences</h1>
+            </div>
+         </div>
+      </div> 
+      <!-- =================== -->
+      <div class="checktam">
+       
+            <div class="duc">
+               <div class="vachvang">
+            
+               </div>
+               <div class="textduc">
+                 <span id="thankyou">Thank you for this wonderful Work shop's in Tuscany and Cinque Terre! My enthusiasm about your good organisations, finest tipp's and help me every times.</span>
+               </div>
+               <div class="gsch">
+                  <span id="gabriele">Gabrele Schuirmann</span>
+               </div>
+               <div class="gmain">
+                  <span id="germany">- GERNANY -</span>
+               </div>
+            </div>
+
+            <!-- ====== -->
+            <div class="duc">
+               <div class="vachvang">
+            
+               </div>
+               <div class="textduc">
+                 <span id="thankyou">My dear coach, Thank you so much, we are so lucky to have such wonderful scotland & irealand trips with you, we love those amazing sunrise.</span>
+               </div>
+               <div class="gsch">
+                  <span id="gabriele">Angela Chong</span>
+               </div>
+               <div class="gmain">
+                  <span id="germany">- UNITED KINGDOM -</span>
+               </div>
+            </div>
+
+            <!-- ====== -->
+            <div class="duc">
+               <div class="vachvang">
+            
+               </div>
+               <div class="textduc">
+                 <span id="thankyou">Thank you so much for putting together such a beautiful trip. I know it must take hour to plan and put together and you guys did a fantatstic job.
+               </span>
+               </div>
+               <div class="gsch">
+                  <span id="gabriele">Jane Levine</span>
+               </div>
+               <div class="gmain">
+                  <span id="germany">- SLOVAKIA -</span>
+               </div>
+            </div>
+      </div>
+    </section>
+
+    <section class="johan4">
+
+      <div class="bannertrenns">
+
+      </div>
+      
+      
+          <div class="nen4">
+            <div class="lkearn">
+               <span id="lrom">
+                  LEARN FROM THE BEST
+               </span>
+            </div>
+
+            <div class="takeclas">
+               <h1 id="takeclassandd">
+                  Take Classes and Get Inspired
+               </h1>
+            </div>
+
+            <div class="visit">
+               <span id="visitou">
+                  Visit our classes for a deeper dive into all things GreaterPhoto
+               </span>
+            </div>
+
+            <div class="expolir">
+               <span id="lore">
+                  EXPOLRE CLASSES
+               </span>
+               <div class="yangheee">
+                  <i class='bx bxs-chevrons-right' id="yanghss"></i>
+               </div>              
+            </div>
+
+            <div class="bacaicong">
+
+               <div class="caicongthunhat">
+                  <div class="motngangnamtrawm">
+                     <span id="mot1500">1500+</span>
+                  </div>
+                  <div class="curateddd">
+                     <span id="curatedclasses">CURATED CLASSES</span>
+                  </div>
+               </div>
+
+               <div class="caicongthunhat">
+                  <div class="motngangnamtrawm">
+                     <span id="mot1500">650+</span>
+                  </div>
+                  <div class="curateddd">
+                     <span id="curatedclasses">EXPERT INSTRUCTORS</span>
+                  </div>
+               </div>
+
+               <div class="caicongthunhat">
+                  <div class="motngangnamtrawm">
+                     <span id="mot1500">7000+</span>
+                  </div>
+                  <div class="curateddd">
+                     <span id="curatedclasses">STUDENT STRONG</span>
+                  </div>
+               </div>
+              
+               
+            </div>
+
+         <div class="bannertrenns2">
+
+         </div>         
+      </div>
+    </section>
+
+    
+   <!-- ==================================FOOTER==================== -->
+
+    <div class="chantrang">
+
+      <div class="webmap">
+         <div class="thanhdieuhuongchantrang">
+            <ul  class="thanhdieuhuongft">
+
+               <div class="ft101">
+                   <li><a id="ft5x" href="index.html"><span id="fttext">Photographers</span></a></li>
+               </div>
+               <div class="ft102">
+                  <li><a id="ft5x" href="index.html"><span id="fttext">Classes</span></a></li>
+              </div>
+               <div class="ft103">
+                  <li><a id="ft5x" href="/pages/workshop.html"><span id="fttext">Workshop</span></a></li>
+               </div>
+               <div class="ft104">
+                  <li><a id="ft5x" href="/pages/stories.html"><span id="fttext">Become A Contributor</span></a></li>
+               </div>
+               <div class="ft105">
+                  <li><a href="/pages/contact.html" id="ft5x"><span id="fttext">Contas Us</span></a></li>
+               </div>          
+               
+            </ul>
+         </div>
+      </div>
+
+      <div class="iconmap">
+         <div class="thanhdieuhuongchantrang">
+            <ul  class="thanhdieuhuongicon">
+
+               <div class="ft0">
+                   <li><a id="ft5x" href="#"><i class='bx bxl-facebook'></i></a></li>
+               </div>
+               <div class="ft0">
+                  <li><a id="ft5x" href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+              </div>
+               <div class="ft0">
+                  <li><a id="ft5x" href="#"><i class='bx bxl-linkedin' ></i></a></li>
+               </div>
+               <div class="ft0">
+                  <li><a id="ft5x" href="#"><i class='bx bxl-youtube' ></i></a></li>
+               </div>
+
+            </ul>
+         </div>
+      </div>
+
+      <div class="thuonghieucanhan">
+         <div class="thuonghieucanhanx">
+
+            <div class="logothuonghieu">
+               <img src="/img/FPT_Polytechnic.png" width="200px" height="70px">
+            </div>
+
+            <div class="thuonghieu">
+               <div class="textthuonghieu">
+                  <span class="texthuonghieux">
+                     Copyright @ 2023 ASM
+                  </span><br>
+                  <span class="texthuonghieux">
+                    Web progamming by Johan FPT
+                  </span>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+    </div>
+
+
+</body>
+</html>
