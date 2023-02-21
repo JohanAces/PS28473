@@ -968,6 +968,12 @@ footer{
     height: 190px;
 }
 
+.vipk{
+    padding-left: 40px;
+    width: 300px;
+    height: 190px;
+}
+
 
 .tiemcantoantext{
     padding-top: 40px;
@@ -992,7 +998,7 @@ footer{
 /* ================================================== */
 
  footer{
-    background-image: url(/img/4kbg.jpg);
+    background-image: url(/img/xiaochang.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
